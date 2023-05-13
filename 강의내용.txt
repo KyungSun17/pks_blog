@@ -24,3 +24,5 @@ npm install lodash
 
 # sanity 사용
 sanity.cmd login -> sanity.cmd init -> sanity.cmd start (localhost에 띄움), sanity.cmd deploy (SaaS에 띄움)
+
+# Slug : 게시물마다 고유한 url 생성용
