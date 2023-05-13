@@ -1,0 +1,19 @@
+# Node package manager 프로젝트 생성
+npm init -y
+
+# 패키지 설치해봄 - 설치하면 node-modules안에 생성됨, parcel-bundler에 package.json 안에 필요 패키지도 같이 다운됨
+# package-lock.json은 내부에서 사용하는 패키지정보를 담고있음
+# 이후 node_modules 파일이 없어도 node-modules는 생성가능 (npm install)
+npm install parcel-bundler -D
+npm install lodash
+
+# D 옵션 - 개발용 의존성 패키지 설치 (개발할때만 필요하고 필요하지 않음), 옵션없으면 브라우저에서도 동작할 수 있음
+
+# html 파일에서 ! 하고 tab키 클릭하면 기본 layout 생성됨
+
+# parcel index.html 서버에서 구동시킴
+# npm run dev : package.json에 표기한 dev script 구동
+
+# import _ from 'lodash' 하면 해당 package에 main구동, _를 사용하여 lodash안에 모듈들 사용가능
+
+# gitignore를 만들어놓으면 git에 업로드 되지 않음
