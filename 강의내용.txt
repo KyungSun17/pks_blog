@@ -26,3 +26,32 @@ npm install lodash
 sanity.cmd login -> sanity.cmd init -> sanity.cmd start (localhost에 띄움), sanity.cmd deploy (SaaS에 띄움)
 
 # Slug : 게시물마다 고유한 url 생성용
+
+# sanity Dataset 쿼리예시
+*[_type == 'home'][0]{'mainPostUrl': mainPost -> slug.current}
+
+# 필요데이터 추출 쿼리
+*[_type == 'post']{
+  title,
+  subtitle, 
+  createdAt, 
+  'content' : content[]{
+    ..., 
+    ...select(_type == 'imageGallery' -> {'images': images[]{..., 'url' : asset -> url}})
+  },
+  'slug' : slug.current,
+  'thumbnail' : {
+    'alt' : thumbnail.alt,
+    'imageUrl' : thumbnail.asset -> url
+  },
+  'author' : author -> {
+    name,
+    role,
+    'image' : image.asset -> url
+  },
+  'tag' : tag -> {
+    title,
+    'slug' : slug.current
+  }
+    
+}
