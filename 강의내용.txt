@@ -20,3 +20,7 @@ npm install lodash
 # git status하면 add되지 않아 빨간색으로 표시 > git add . 해줌
 # git 연결 git remote add origin https://github.com/KyungSun17/pks_blog.git
 # commit > push 해줌 : git commit -m '프로젝트생성', git push origin master
+
+
+# sanity 사용
+sanity.cmd login -> sanity.cmd init -> sanity.cmd start (localhost에 띄움), sanity.cmd deploy (SaaS에 띄움)
