@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import CodeInput from '../components/CodeInput'
 
 export default defineType({
   name: 'code',
@@ -22,6 +23,7 @@ export default defineType({
         title: 'Code',
         type: 'string',
         validation: (Rule) => Rule.required(),
+        components:{input: CodeInput,} //버전이슈로 판단됨, 수정
     }),
   ],
 })
