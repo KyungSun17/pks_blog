@@ -10,10 +10,13 @@ npm install lodash
 # D 옵션 - 개발용 의존성 패키지 설치 (개발할때만 필요하고 필요하지 않음), 옵션없으면 브라우저에서도 동작할 수 있음
 
 # html 파일에서 ! 하고 tab키 클릭하면 기본 layout 생성됨
-
+ 햐
 # parcel index.html 서버에서 구동시킴
 # npm run dev : package.json에 표기한 dev script 구동
 
 # import _ from 'lodash' 하면 해당 package에 main구동, _를 사용하여 lodash안에 모듈들 사용가능
 
-# gitignore를 만들어놓으면 git에 업로드 되지 않음
+# gitignore를 만들어놓으면 git에 업로드 되지 않음 > git init하면 회색으로 표시됨
+# git status하면 add되지 않아 빨간색으로 표시 > git add . 해줌
+# git 연결 git remote add origin https://github.com/KyungSun17/pks_blog.git
+# commit > push 해줌 : git commit -m '프로젝트생성', git push origin master
