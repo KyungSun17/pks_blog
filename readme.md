@@ -1,3 +1,9 @@
+# 폴더구성
+- my-blog-contents : sanity 실습
+- my-blog : Next.js 실습
+
+<br><br><br><br><br><br>
+
 # Node package manager 프로젝트 생성
 ```
 npm init -y
