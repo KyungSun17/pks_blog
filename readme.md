@@ -4,6 +4,12 @@
 
 <br><br><br><br><br><br>
 
+
+# nvm 설치
+- https://github.com/nvm-sh/nvm
+
+
+
 # Node package manager 프로젝트 생성
 ```
 npm init -y
@@ -69,3 +75,7 @@ sanity.cmd login -> sanity.cmd init -> sanity.cmd start (localhost에 띄움), s
     
 }
 ```
+
+# Next Pjt 새로 실행
+- npm init -y
+- npm i next
