@@ -1,14 +1,26 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import SanityService from '../services/SanityService'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+export default function Home( { home, posts } ) {
+  console.log(home);
+  console.log(posts);
   return (
     <div>
       <h1>Blog Home</h1>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  // sanity로부터 데이터 get
+  const sanityService = new SanityService();
+  const home = await sanityService.getHome();
+  const posts = await sanityService.getPosts();
+  
+
+  return {
+      props: {
+          home,
+          posts,
+      },
+  };
 }
