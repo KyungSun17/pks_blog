@@ -25,7 +25,7 @@ export default function BlogPostDetail({blocks}){
     <Row>
         <Col span={24}>
             <BlockContent blocks={blocks}
-            projectId="psrsxuci"
+            projectId={process.env.SANITY_PROJECT_ID}
             dataset="production"
             serializers={serializers}/>
         </Col>
