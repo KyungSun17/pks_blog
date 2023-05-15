@@ -1,10 +1,17 @@
-import sanityClient from '@sanity/client'
-import SanityService from '../../services/SanityService'
+import styles from "../../styles/Home.module.css";
+import SanityService from '../../services/SanityService';
+import Header from "../../components/Header.jsx"
+import BlogMainPost from "../../components/BlogMainPost.jsx"
+import Footer from "../../components/Footer.jsx"
+import BlogPostDetail from "../../components/BlogPostDetail.jsx"
 
 export default function PostAll( {slug, post} ) {
     return (
-        <div>
-            <h1>Post : { slug }</h1>
+        <div className={styles.container}>
+            <Header/>
+            <BlogMainPost {...post}/>
+            <BlogPostDetail blocks={post.content}/>
+            <Footer/>
         </div>
     )
 }
