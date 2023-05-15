@@ -79,3 +79,9 @@ sanity.cmd login -> sanity.cmd init -> sanity.cmd start (localhost에 띄움), s
 # Next Pjt 새로 실행
 - npm init -y
 - npm i next
+
+# Nextjs 빌드
+- 빌드없이 start ==> 서버사이드랜더링
+- npm run build
+- npm run start ==> static resource 이용해 사이트 오픈 (api 사용가능)
+- next build && next export ==> out 폴더에 static resource 생성 > 실행 npx serve out (api 사용불가)
