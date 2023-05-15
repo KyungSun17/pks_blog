@@ -2,7 +2,6 @@ import sanityClient from '@sanity/client'
 import SanityService from '../../services/SanityService'
 
 export default function PostAll( {slug, post} ) {
-    console.log(post);
     return (
         <div>
             <h1>Post : { slug }</h1>
